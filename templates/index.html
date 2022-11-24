@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>traffic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Oswald:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="navbar">
+            <div id="box">
+
+            </div>
+            <div id="content">
+                Traffic Sign
+            </div>
+        </div>
+    </nav>
+  
+    <div id="main">
+
+        <h1>Traffic Sign Board Recognition</h1>
+        <form id="upload-file" method="post" enctype="multipart/form-data">
+            <div>UPLOAD IMAGE</div>
+            <label for="uploadImage">Upload...</label>
+            <input type="file" name="file" id="uploadImage">
+
+        </form>
+        <div class="image-section" style="display:none;">
+            <div class="img-preview">
+                <div id="imagePreview">
+                </div>
+            </div>
+            
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict Traffic🚦 Signs</button>
+        </div>
+        <div id="result">
+           
+        </div>
+     
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../static/main.js"></script>
+</body>
+
+</html>
